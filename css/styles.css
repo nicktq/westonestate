@@ -110,6 +110,7 @@ a:hover, a:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 25vh;
 }
 
 .ticket-buttons > button {
