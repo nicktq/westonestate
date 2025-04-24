@@ -28,7 +28,14 @@ body {
 }
 
 /* HEADER */
-
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 .headertext {
     font-size: 0.75rem;
