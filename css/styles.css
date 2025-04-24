@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+/*Colors: 
+Green: 284A31
+Black: 00000
+Cream: F5EBE0
+*/
+
+* {
+    background-color: #F5EBE0;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "header"
+    "home-image"
+    "tour-dates"
+    "music-videos"
+    "footer";
+    margin: 0;
+    padding: 0;    
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.headertext {
+    font-size: 0.75rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: white;
+    background-color: #284A31; 
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+/* HOME IMAGE */
+.home-image {
+    grid-area: home-image;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.weston-pic-1 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.home-image > h2 {
+    font-size: 1em;
+}
+
+/* TOUR DATES */
+.tour-dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: tour-dates;
+}
+
+.dates {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.venue-and-city {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+}
+
+.ticket-buttons > button {
+    font-family: "Syne", sans-serif;
+    background-color: #284A31; 
+    color: #F5EBE0F5;
+    width: 100px;
+    border-radius: 5px;
+    border-color: #F5EBE0;
+    transition: background-color 500ms ease;
+}
+
+.buy-tickets:hover, .buy-tickets:focus {
+    font-family: "Syne", sans-serif;
+    color: white;
+    background-color: lightblue;
+    text-decoration: none;
+    border-radius: 5px;
+    border-color: #F5EBE0;
+    box-shadow: 2.5px 2.5px 2.5px lightgray;
+}
+    
+
+/* MUSIC VIDEOS */
+.music-videos {
+    grid-area: music-videos;
+}
+
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    background-color: #284A31;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 5px 5px 12.5px lightgray;
+}
+
+.footer > p {
+    background-color: #284A31;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+
+
+
+
+@media screen and (min-width: 628px) {
+
+
+/* BODY */
+body {
+    display: grid;
+    grid-template-columns: minmax(0, 30%) minmax(0, 70%);    grid-template-rows: auto auto auto 100px;
+    grid-template-areas: 
+    "header header"
+    "welcome form"
+    "images images"
+    "footer footer";
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;    
+}
+
+/* HEADER */
+.header {
+    grid-area: header;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.headertext {
+    flex-shrink: 0;
+    font-size: 0.6rem;
+}
+
+/* WELCOME */
+.welcomecontent {
+    grid-area: welcome;
+    width: 100%;
+    margin: 15px;
+    box-shadow: 5px 5px 12.5px lightgray;
+    margin-left: 50px;
+}
+
+.welcomecontent > h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.welcomecontent > p {
+    font-size: 1em;
+}
+
+
+/* FORM */
+.form {
+    grid-area: form;
+    width: auto;
+    margin-right: 50px;
+}
+
+/* IMAGES */
+.images {
+    grid-area: images;
+    display: flex;
+    flex-direction: row;
+}
+
+.player1, .player2, .player3 {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    animation: grow-reverse 1.5s ease-out forwards
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
