@@ -109,9 +109,7 @@ a:hover, a:focus {
 .ticket-buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 60px;
+    justify-content: space-between;
 }
 
 .ticket-buttons > button {
