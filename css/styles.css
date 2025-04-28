@@ -167,9 +167,9 @@ input::placeholder {
     object-fit: cover; 
 }
 
-/*MERCH BASE STYLE */
+/*MERCH */
 .merch-main {
-    margin: 20px;
+    margin: 0 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -178,11 +178,12 @@ input::placeholder {
 
 .merch-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Mobile: 2 per row /
-    gap: 30px; / Space between items */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     width: 100%;
     max-width: 1200px;
     padding: 20px;
+    margin: 20px;
 }
 
 .item {
@@ -190,6 +191,9 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .merch-image {
@@ -206,9 +210,20 @@ input::placeholder {
     font-size: 16px;
 }
 
+.merch-buy {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .item-price {
     margin-top: 5px;
-    font-size: 14px;
+    margin-left: 20px;
+}
+
+.item p {
+    font-size: 20px;
 }
 
 .about-main {
@@ -216,21 +231,61 @@ input::placeholder {
     flex-direction: column;
 }
 
+.merch-buy button {
+    background-color:#284A31;
+    color:#F5EBE0;
+    font-family: "Syne";
+    font-size: 18px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.merch-buy button:focus, button:hover {
+    background-color: #F5EBE0;
+    border: 3px solid #284A31;
+    color: #284A31;
+}
+
 .about-member {
     display: flex;
     flex-direction: column;
+    border: 10px solid lightgray;
+    border-radius: 20px;
+    align-items: center;
 }
 
 .about-group-desc {
     margin: 20px;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
+    font-family: "Syne";
+}
+
+.about-main {
+    margin: 40px;
+}
+
+.about-main-img {
+    width: 80%;
+    min-width: 700px;
+    align-self: center;
+    padding: 20px;
+    border: 10px solid lightgray;
+    border-radius: 25px;
 }
 
 .about-member img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
     margin: 20px;
+    object-fit: contatin;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .about-member-text {
@@ -244,7 +299,8 @@ input::placeholder {
 }
 
 .about-member-desc {
-    font-size: 24px;
+    font-size: 20px;
+    font-family: "Syne";
 }
 
 /* TOUR DATES */
@@ -430,7 +486,6 @@ input::placeholder {
     border-radius: 10px;
     box-shadow: 2px 3px 5px black;
 }
-
 
 
 
