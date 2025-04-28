@@ -8,12 +8,12 @@ Cream: F5EBE0
 */
 
 * {
-    background-color: #F5EBE0;
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;
 }
 
 .home-container {
+    background-color: #F5EBE0;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
@@ -97,6 +97,7 @@ a:hover, a:focus {
     justify-content: center;
     align-items: center;
     row-gap: 30px;
+    margin-bottom: 50px;
 }
 
 
@@ -105,14 +106,14 @@ a:hover, a:focus {
     grid-area: footer;
     background-color: #284A31;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 5px 5px 12.5px lightgray;
 }
 
-.mailing-list {
-    background-color: #284A31;
+.social-media {
+    display: flex;
+    flex-direction: column;
 }
 
 
