@@ -370,6 +370,7 @@ input::placeholder {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-bottom: 30px;
 }
 
 .contact-container h1 {
