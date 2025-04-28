@@ -269,7 +269,7 @@ input::placeholder {
     min-width: 200px;
     height: 200px;
     margin: 20px;
-    object-fit: contatin;
+    object-fit: contain;
 }
 
 .members {
@@ -503,7 +503,6 @@ input::placeholder {
     /* HEADER */
     .header {
     grid-area: header;
-    justify-content: space-between;
     flex-wrap: nowrap;
     width: auto;
     }
@@ -529,9 +528,9 @@ input::placeholder {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
-    .weston-pic-1 {
+    .weston-pic-1 { 
     width: 60%;
-    height: auto;
+    max-height: auto;
     object-fit: cover;
     }
 
