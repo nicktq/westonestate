@@ -12,6 +12,10 @@ Cream: F5EBE0
     font-weight: 700;
 }
 
+html {
+    background-color: #F5EBE0;
+}
+
 .home-container {
     background-color: #F5EBE0;
     display: grid;
@@ -37,7 +41,7 @@ Cream: F5EBE0
 }
 
 .headertext {
-    font-size: 0.75rem;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -299,10 +303,8 @@ input::placeholder {
     text-align: center;
 }
 
-.tour-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    font-weight: 600px;
+.superbloom-logo{
+    width: 100%;
 }
 
 .tour-date {
@@ -502,16 +504,20 @@ input::placeholder {
 
     /* HEADER */
     .header {
-    grid-area: header;
-    flex-wrap: nowrap;
-    width: auto;
+        flex-wrap: nowrap;
+        padding: 0;
     }
-
+    
     .headertext {
-    flex-shrink: 0;
-    font-size: 0.7rem;
+        margin-left: 5px;
+        font-size: 1.25rem;
+        flex-shrink: 0; /* Prevent shrinking of header text */
     }
 
+    a {
+        font-size: 0.8rem;
+    }
+    
     /* MUSIC VIDEOS */
     .music-videos iframe {
     width: 500px;
@@ -585,6 +591,10 @@ input::placeholder {
         margin: 20px auto;
         padding: 20px;
     }
+
+    .superbloom-logo{
+        width: 60%;
+    }
     
     .info {
         display: flex;
@@ -634,5 +644,43 @@ input::placeholder {
     
     .music-text {
         font-size: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    /* HEADER */
+    .header {
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+    
+    .headertext {
+        margin-left: 5px;
+        font-size: 1.5rem;
+        flex-shrink: 0; /* Prevent shrinking of header text */
+    }
+
+    a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    /* HEADER */
+    .header {
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+    
+    .headertext {
+        margin-left: 5px;
+        font-size: 2rem;
+        flex-shrink: 0; /* Prevent shrinking of header text */
+    }
+
+    a {
+        font-size: 1.2rem;
     }
 }
