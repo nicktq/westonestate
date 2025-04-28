@@ -13,14 +13,13 @@ Cream: F5EBE0
     font-weight: 700;
 }
 
-body {
+.home-container {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: 
     "header"
     "home-image"
-    "tour-dates"
     "music-videos"
     "footer";
     margin: 0;
@@ -75,13 +74,13 @@ a:hover, a:focus {
 }
 
 .weston-pic-1 {
-    width: 100%;
+    width: 120%;
     height: auto;
     object-fit: cover;
 }
 
 .weston-pic-2 {
-    width: 30%;
+    width: 70%;
     height: auto;
     object-fit: cover;
 }
@@ -90,57 +89,6 @@ a:hover, a:focus {
     font-size: 1em;
 }
 
-/* TOUR DATES */
-.tour-dates {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    grid-area: tour-dates;
-}
-
-.dates {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-}
-
-.venue-and-city {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.ticket-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 50px;
-}
-
-.ticket-buttons > button {
-    font-family: "Syne", sans-serif;
-    background-color: #284A31; 
-    color: #F5EBE0F5;
-    width: 100px;
-    border-radius: 5px;
-    border-color: #F5EBE0;
-    transition: background-color 500ms ease;
-}
-
-.buy-tickets:hover, .buy-tickets:focus {
-    font-family: "Syne", sans-serif;
-    color: white;
-    background-color: lightblue;
-    text-decoration: none;
-    border-radius: 5px;
-    border-color: #F5EBE0;
-    box-shadow: 2.5px 2.5px 2.5px lightgray;
-}
-    
-
 /* MUSIC VIDEOS */
 .music-videos {
     grid-area: music-videos;
@@ -148,6 +96,7 @@ a:hover, a:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 30px;
 }
 
 
@@ -157,18 +106,15 @@ a:hover, a:focus {
     background-color: #284A31;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 12.5px lightgray;
 }
 
-.footer > p {
+.mailing-list {
     background-color: #284A31;
-    color: black;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 20px;
 }
+
 
 
 

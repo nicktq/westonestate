@@ -1,0 +1,49 @@
+/* TOUR DATES */
+.tour-dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: tour-dates;
+}
+
+.dates {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.venue-and-city {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.ticket-buttons > button {
+    font-family: "Syne", sans-serif;
+    background-color: #284A31; 
+    color: #F5EBE0F5;
+    width: 100px;
+    border-radius: 5px;
+    border-color: #F5EBE0;
+    transition: background-color 500ms ease;
+}
+
+.buy-tickets:hover, .buy-tickets:focus {
+    font-family: "Syne", sans-serif;
+    color: white;
+    background-color: lightblue;
+    text-decoration: none;
+    border-radius: 5px;
+    border-color: #F5EBE0;
+    box-shadow: 2.5px 2.5px 2.5px lightgray;
+}
