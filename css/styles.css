@@ -96,10 +96,14 @@ a:hover, a:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     row-gap: 30px;
     margin-bottom: 50px;
 }
 
+.music-videos iframe {
+    width: 90%;
+}
 
 /* FOOTER */
 .footer {
@@ -166,6 +170,20 @@ input::placeholder {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 628px) {
 
 
@@ -195,6 +213,11 @@ input::placeholder {
 .headertext {
     flex-shrink: 0;
     font-size: 0.6rem;
+}
+
+/* MUSIC VIDEOS */
+.music-videos iframe {
+    width: 30%;
 }
 
 /* HOME IMAGE */
@@ -246,11 +269,16 @@ input::placeholder {
 }
 
 /* FOOTER */
-.weston-insta, .weston-tiktok, .weston-facebook {
-    width: 5%;
-    height: auto;
-    object-fit: cover; 
+.footer {
+    flex-direction: row;
 }
 
+.social-media a {
+    align-items: flex-end;
+    margin-right: 20px;
+}
 
+.weston-insta, .weston-tiktok, .weston-facebook {
+    width: 5%;
+}
 }
