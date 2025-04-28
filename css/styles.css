@@ -74,19 +74,9 @@ a {
 }
 
 .weston-pic-1 {
-    width: 120%;
+    width: 100%;
     height: auto;
     object-fit: cover;
-}
-
-.weston-pic-2 {
-    width: 70%;
-    height: auto;
-    object-fit: cover;
-}
-
-.home-image > h2 {
-    font-size: 1em;
 }
 
 /* MUSIC VIDEOS */
@@ -545,12 +535,6 @@ input::placeholder {
     object-fit: cover;
     }
 
-    .weston-pic-2 {
-    width: 30%;
-    height: auto;
-    object-fit: cover;
-    }
-
     /* FOOTER */
     .footer {
     flex-direction: row;
@@ -613,6 +597,7 @@ input::placeholder {
     /* CONTACT */
     .contact-container {
         padding: 0 15px;
+    }
 
     /* MUSIC */    
     .music-page-pic {
