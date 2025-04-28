@@ -55,7 +55,7 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:focus {
+.nav-collapse a:hover, .nav-collapse a:focus {
     color: white;
     background-color: #284A31; 
     text-decoration: underline;
@@ -315,21 +315,10 @@ input::placeholder {
     font-weight: 600px;
 }
 
-.tour-item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+.tour-date {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 
 .tour-picture {
@@ -342,13 +331,25 @@ input::placeholder {
     height: auto;
 }
 
-.tour-date, .tour-city, .tour-venue {
+.tour-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.tour-city, .tour-venue {
     font-size: 1rem;
-    margin: 4px 0;
+    margin-bottom: 8px;
+    font-family: 'Syne', sans-serif;
 }
 
 .tour-button {
-    padding: 10px 20px;
+    margin-top: 12px;
+    padding: 12px 24px;
     background-color: #284A31;
     color: white;
     text-decoration: none;
@@ -360,6 +361,7 @@ input::placeholder {
 .contact-container {
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .contact-container h1 {
@@ -490,193 +492,6 @@ input::placeholder {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 700px) {
 
 
@@ -775,6 +590,29 @@ input::placeholder {
     .contact-container {
         width: 80vw;
     }
+
+    /* TOUR DATES */
+    .tour-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    /* CONTACT */
+    .contact-container {
+        padding: 0 15px;
 
     /* MUSIC */    
     .music-page-pic {
