@@ -37,7 +37,7 @@ html {
     align-items: center;
     flex-wrap: wrap;
     padding: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .headertext {
@@ -76,13 +76,13 @@ a {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .weston-pic-1 {
     width: 100%;
     height: auto;
     object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 /* MUSIC VIDEOS */
@@ -148,6 +148,7 @@ input::placeholder {
     color:#284A31;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 .mailing-list-submit-button:focus, .mailing-list-submit-button:hover {
@@ -155,6 +156,7 @@ input::placeholder {
     border: 3px solid #F5EBE0;
     color: #F5EBE0;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
 }
 
 .mailing-list-note {
@@ -245,21 +247,24 @@ input::placeholder {
     flex-direction: column;
 }
 
-.merch-buy button {
-    background-color:#284A31;
-    color:#F5EBE0;
-    font-family: "Syne";
-    font-size: 18px;
+.merch-buy-button {
+    font-family: "Syne", sans-serif;
+    background-color: #284A31;
+    border: 3px solid #F5EBE0;
+    color: #F5EBE0;
+    width: 65px;
     border-radius: 10px;
-    margin-right: 20px;
+    cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
 }
 
-.merch-buy button:focus, button:hover {
+.merch-buy-button:focus, .merch-buy-button:hover {
     background-color: #F5EBE0;
     border: 3px solid #284A31;
     color: #284A31;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
 }
 
 .about-member {
@@ -365,11 +370,24 @@ input::placeholder {
     margin-top: 12px;
     padding: 12px 24px;
     background-color: #284A31;
-    color: white;
+    border: 3px solid #F5EBE0;
+    color: #F5EBE0;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.tour-button:hover, .tour-button:focus {
+    background-color: #F5EBE0;
+    border: 3px solid #284A31;
+    color: #284A31;
     text-decoration: none;
     font-weight: bold;
     border-radius: 25px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
 }
 
 /* CONTACT */
@@ -429,7 +447,10 @@ input::placeholder {
 
 .submit-button {
     background-color: #284A31;
-    color: white;
+    border: 3px solid #F5EBE0;
+    color: #F5EBE0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     width: 100%;
     max-width: 35%;
     margin-top: 10px;
@@ -437,9 +458,14 @@ input::placeholder {
     border-radius: 25px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.submit-button:focus, .submit-button:hover {
+    background-color: #F5EBE0;
+    border: 3px solid #284A31;
+    color: #284A31;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     transition: background-color 0.3s ease;
-    border-style: none;
 }
 
 /* MUSIC */
@@ -479,7 +505,7 @@ input::placeholder {
 }
 
 .music-logo {
-    width: 50px;
+    width: 40px;
     height: auto;
     object-fit: scale-down;
 }
@@ -491,20 +517,29 @@ input::placeholder {
 }
 
 .music-text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin-right: 25px;
 }
 
 .listen-button {
     width: 100px;
     height: 50px;
     background-color: #284A31;
+    border: 3px solid #F5EBE0;
     font-size: 1.1rem;
     color: #F5EBE0;
-    border-style: none;
     border-radius: 10px;
+    cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
+.listen-button:focus, .listen-button:hover {
+    background-color: #F5EBE0;
+    border: 3px solid #284A31;
+    color: #284A31;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
 
 
 
@@ -544,7 +579,7 @@ input::placeholder {
     
     /* MUSIC VIDEOS */
     .music-videos iframe {
-    width: 500px;
+    width: 560px;
     }
 
     /* HOME IMAGE */
@@ -555,7 +590,6 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .weston-pic-1 { 
@@ -639,29 +673,9 @@ input::placeholder {
         padding: 0 15px;
     }
 
-    /* MUSIC */    
+    /* MUSIC */  
     .music-page-pic {
         max-width: 80%;
-    }
-    
-    .music-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        row-gap: 50px;
-    }
-    
-    .music-row {
-        display: flex;
-        flex-direction: row;
-        row-gap: 50px;
-    }
-    
-    .music-item {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     
     .music-logo {
@@ -670,11 +684,10 @@ input::placeholder {
     
     .spotify-logo, .soundcloud-logo, .pandora-logo {
         width: 100px;
-
     }
     
     .music-text {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 }
 
