@@ -41,7 +41,8 @@ html {
 }
 
 .headertext {
-    font-size: 1.5rem;
+    margin-left: 20px;
+    font-size: 1.25rem;
 }
 
 ul {
@@ -50,6 +51,7 @@ ul {
 }
 
 li {
+    margin-right: 20px;
     list-style-type: none;
 }
 
@@ -145,12 +147,14 @@ input::placeholder {
     border: 3px solid #284A31;
     color:#284A31;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .mailing-list-submit-button:focus, .mailing-list-submit-button:hover {
     background-color: #284A31;
     border: 3px solid #F5EBE0;
     color: #F5EBE0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .mailing-list-note {
@@ -248,12 +252,14 @@ input::placeholder {
     font-size: 18px;
     border-radius: 10px;
     margin-right: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .merch-buy button:focus, button:hover {
     background-color: #F5EBE0;
     border: 3px solid #284A31;
     color: #284A31;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .about-member {
@@ -363,6 +369,7 @@ input::placeholder {
     text-decoration: none;
     font-weight: bold;
     border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 /* CONTACT */
@@ -495,7 +502,7 @@ input::placeholder {
     color: #F5EBE0;
     border-style: none;
     border-radius: 10px;
-    box-shadow: 2px 3px 5px black;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 
@@ -526,13 +533,13 @@ input::placeholder {
     }
     
     .headertext {
-        margin-left: 5px;
-        font-size: 1.25rem;
+        margin-left: 20px;
+        font-size: 1rem;
         flex-shrink: 0; /* Prevent shrinking of header text */
     }
 
     a {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     
     /* MUSIC VIDEOS */
@@ -671,40 +678,50 @@ input::placeholder {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 
-    /* HEADER */
-    .header {
-        flex-wrap: nowrap;
-        padding: 0;
-    }
-    
+    /* HEADER */    
     .headertext {
-        margin-left: 5px;
-        font-size: 1.5rem;
-        flex-shrink: 0; /* Prevent shrinking of header text */
+        font-size: 1.1rem;
     }
 
     a {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
 
-    /* HEADER */
-    .header {
-        flex-wrap: nowrap;
-        padding: 0;
-    }
-    
+    /* HEADER */    
     .headertext {
-        margin-left: 5px;
-        font-size: 2rem;
-        flex-shrink: 0; /* Prevent shrinking of header text */
+        font-size: 1.5rem;
     }
 
     a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    /* HEADER */
+    .headertext {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    /* HEADER */
+    .headertext {
+        font-size: 2.2rem;
+    }
+
+    a {
+        font-size: 1.5rem;
     }
 }
