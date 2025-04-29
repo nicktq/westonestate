@@ -126,7 +126,7 @@ a {
     padding: 10px;
 }
 
-input {
+.mailing-list-signup {
     background-color: #284A31;
     border-style: solid;
     border-top: none;
@@ -572,7 +572,7 @@ input::placeholder {
     .headertext {
         margin-left: 20px;
         font-size: 1rem;
-        flex-shrink: 0; /* Prevent shrinking of header text */
+        flex-shrink: 0;
     }
 
     a {
