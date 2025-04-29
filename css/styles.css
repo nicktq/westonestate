@@ -186,7 +186,6 @@ input::placeholder {
 /*MERCH */
 .merch-main {
     margin: 0 20px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,7 +276,7 @@ input::placeholder {
 
 .about-group-desc {
     margin: 20px;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     font-family: "Syne";
 }
@@ -287,12 +286,11 @@ input::placeholder {
 }
 
 .about-main-img {
-    width: 80%;
-    min-width: 700px;
+    width: 100%;
+    object-fit: cover;
     align-self: center;
     padding: 20px;
-    border: 10px solid lightgray;
-    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .about-member img {
@@ -301,6 +299,7 @@ input::placeholder {
     height: 200px;
     margin: 20px;
     object-fit: contain;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .members {
@@ -316,11 +315,12 @@ input::placeholder {
 }
 
 .about-member-title {
-    font-size: 30px;
+    text-align: center;
+    font-size: 24px;
 }
 
 .about-member-desc {
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Syne";
 }
 
@@ -348,6 +348,7 @@ input::placeholder {
 .tour-picture img {
     max-width: 100%;
     height: auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .tour-item {
@@ -481,6 +482,7 @@ input::placeholder {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     }
 
 .music-container {
@@ -632,9 +634,26 @@ input::placeholder {
     }
 
     /* ABOUT */
+    .about-main-img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .about-group-desc {
+        font-size: 22px;
+    }
+
     .about-member {
     display: flex;
     flex-direction: row;
+    }
+
+    .about-member-title {
+        font-size: 30px;
+    }
+    
+    .about-member-desc {
+        font-size: 20px;
     }
 
     .about-member-text {
